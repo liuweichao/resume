@@ -9,14 +9,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
     <script src="static/js/script.js"></script>
+    <style>
+        .portrait{
+            position: relative;
+            overflow: hidden;
+        }
+        .portrait img {
+            position: absolute;
+            left: 0;
+            top: -10px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body style="padding-right: 0px;">
     <div class="container" id="cv" style="    height: 2560px;">
         <div class="side">
             <div class="me">
-                <div class="portrait"
-                    style="background-image: url(&quot;http://www.photoexpress.com.cn/ReadImage.aspx?buf=0&type=%2BbbbQTqQAIHFRNF`mgUkUHJfDAu6Smtg1ZNvIwKH2IyT1xN61eM=&quot;);">
+                <div class="portrait">
+                    <img src="http://www.photoexpress.com.cn/ReadImage.aspx?buf=0&type=%2BbbbQTqQAIHFRNF`mgUkUHJfDAu6Smtg1ZNvIwKH2IyT1xN61eM=" alt="">
                 </div>
                 <h1 id="username" contenteditable="true">Alex</h1>
                 <h4 id="persona-tag" contenteditable="true">html / 前端开发</h4>
@@ -31,97 +43,77 @@
                     <li>
                         <label class="left-label" contenteditable="true">姓名</label><span class="label-value"
                             contenteditable="true">柳伟超</span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span><span class="item-remove"><i
                                 class="iconfont icon-delete"></i></span></li>
                     <li>
                         <label class="left-label" contenteditable="true">学历</label><span class="label-value"
-                            contenteditable="true">大专</span><span class="item-remove"><i
-                                class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value"
-                            contenteditable="true">中山火炬职业技术学院</span><span class="item-remove"><i
-                                class="iconfont icon-delete"></i></span></li>
+                            contenteditable="true">大专</span><span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span><span class="item-remove"
+                            style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
                     <li>
                         <label class="left-label" contenteditable="true">
                             <p class="MsoNormal" contenteditable="true"><span
                                     style="mso-spacerun:'yes';font-family:华康圆体W5;font-size:10.5000pt;mso-font-kerning:1.0000pt;">专业</span>
                             </p>
-                        </label><span class="label-value" contenteditable="true">计算机网络</span><span
-                            class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        </label><span class="label-value" contenteditable="true">计算机网络</span><span class="item-remove"
+                            style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span
+                            class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                    </li>
                     <li>
                         <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value"
-                            contenteditable="true">2013</span><span class="item-remove"><i
-                                class="iconfont icon-delete"></i></span></li>
+                            contenteditable="true">2013</span><span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span><span class="item-remove"
+                            style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
                         <label class="left-label" contenteditable="true">经验</label><span class="label-value"
-                            contenteditable="true">6年</span></li>
+                            contenteditable="true">6年</span><span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
             <div class="contact info-unit">
                 <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title"
-                        contenteditable="true">联系方式</span></h2>
+                        contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i
+                            class="iconfont icon-playlistadd"></i></span><span class="unit-remove"
+                        style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
                         <label class="left-label" contenteditable="true">手机</label><span class="label-value"
-                            contenteditable="true">13824741779</span></li>
+                            contenteditable="true">13824741779</span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span></li>
                     <li>
                         <label class="left-label" contenteditable="true">邮箱</label><span class="label-value"
-                            contenteditable="true">270253535@qq.com</span></li>
+                            contenteditable="true">270253535@qq.com</span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span></li>
                     <li>
                         <label class="left-label" contenteditable="true">Github</label><span class="label-value"
-                            contenteditable="true">https://github.com/liuweichao</span></li>
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title"
-                        contenteditable="true">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
-
-                    <li>
-                        <label class="left-label" contenteditable="true">html</label>
-                        <progress value="85.68749999999999" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label" contenteditable="true">css3</label>
-                        <progress value="85.46875" max="100"></progress>
-                        <span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
-
-                    <li>
-                        <label class="left-label" contenteditable="true">javascript</label>
-                        <progress value="90.03125" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label" contenteditable="true">node.js</label>
-                        <progress value="60.53125" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label" contenteditable="true">php</label>
-                        <progress value="60.65625" max="100"></progress>
-                        <span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">MySQL<br></label>
-                        <progress value="60.06249999999999" max="100"></progress>
-                        <span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                            contenteditable="true">https://github.com/liuweichao</span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
             <div class="stack info-unit">
                 <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title"
-                        contenteditable="true">技术栈</span></h2>
+                        contenteditable="true">技术栈</span><span class="item-add"><i
+                            class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i
+                            class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="stack-list">
                     <li>
                         <label class="left-label" contenteditable="true">前端</label><span class="label-value"
-                            contenteditable="true">React、Electron、Typescript、Mobx、Redux、Vue、Angular、jQuery、webpack、gulp、es6、require.js、bootstrap</span><span
-                            class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                            contenteditable="true">React、Vue、Typescript、Mobx、Electron、CSS3、Webpack、ES6</span><span
+                            class="item-remove"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span></li>
 
                     <li>
                         <label class="left-label" contenteditable="true">后端</label><span class="label-value"
-                            contenteditable="true">express、&nbsp;MongoDB 、ejs、php、thinkPHP、MySQL</span></li>
+                            contenteditable="true">NodeJS、Egg.js、Koa、Express、MongoDB 、Redis、MySQL</span><span
+                            class="item-remove"><i class="iconfont icon-delete"></i></span></li>
 
                     <li>
                         <label class="left-label" contenteditable="true">其它</label><span class="label-value"
-                            contenteditable="true">git、svn、vscode、webstrom、sublime</span></li>
+                            contenteditable="true">git、VSCode、webstrom、sublime</span><span class="item-remove"><i
+                                class="iconfont icon-delete"></i></span></li>
 
                 </ul>
             </div>
@@ -129,19 +121,15 @@
             <div class="aboutme info-unit right-paragraph">
                 <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title"
                         contenteditable="true">自我描述</span><span class="unit-remove" style="visibility: hidden;"><i
+                            class="iconfont icon-delete"></i></span><span class="unit-remove"><i
                             class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ol style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: "
-                    hiragino="" sans="" gb",="" "microsoft="" yahei" ,="" simsun,="" arial,="" "helvetica="" neue" ,=""
+                    hiragino="" sans="" gb",="" "microsoft="" yahei"="" ,="" simsun,="" arial,="" "helvetica="" neue"=""
                     helvetica;="" font-size:="" 14px;="" background-color:="" rgb(250,="" 250,="" 250);"="">
                     <li style="outline: 0px; padding: 0px;">
                         <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                            丰富的h5交互经验，但又有金融证券交易系统的开发和实践项目经验，对前端性能优化，有一定的实战基础
-                        </p>
-                    </li>
-                    <li style="outline: 0px; padding: 0px;">
-                        <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                            对后端的流程和实现有所了解，对数据交互也有经验
+                            接触过【Hybrid应用】【NodeJS前后台】【桌面端应用】【H5移动端项目】等多种不同类型项目的开发，对前端大数据量的性能优化，有一定的实战基础
                         </p>
                     </li>
                     <li style="outline: 0px; padding: 0px;">
@@ -151,7 +139,7 @@
                     </li>
                     <li style="outline: 0px; padding: 0px;">
                         <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                            熟练使用es6，react，vue，css3，构建工具webpack，gulp来进行开发
+                            熟练使用es6，react，vue，css3，构建工具webpack来进行开发
                         </p>
                     </li>
                     <li style="outline: 0px; padding: 0px;">
@@ -162,15 +150,8 @@
                         <p style="outline: 0px; padding: 0px;" contenteditable="true">熟练使用less，sass，postcss等css预处理器</p>
                     </li>
                     <li style="outline: 0px; padding: 0px;">
-                        <p style="outline: 0px; padding: 0px;" contenteditable="true">规范，原生app两端的接口，达到在浏览器统一调用</p>
-                    </li>
-                    <li style="outline: 0px; padding: 0px;">
                         <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                            阅读过underscore.js源码，jQuery-30%源码（后面太多了）</p>
-                    </li>
-                    <li style="outline: 0px; padding: 0px;">
-                        <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                            向往着全栈的开发，自学PHP，对后台的建表，无限极分类，权限管理，查询，并发，缓存，静态化，都有基本的了解</p>
+                            向往着全栈的开发，对后台的建表，无限极分类，权限管理，查询，并发，缓存，静态化，都有基本的了解</p>
                     </li>
                 </ol>
             </div>
@@ -182,28 +163,62 @@
 
             <div class="work info-unit right-list">
                 <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title"
-                        contenteditable="true">工作经历</span></h2>
+                        contenteditable="true">工作经历</span><span class="item-add"><i
+                            class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i
+                            class="iconfont icon-delete"></i></span></h2>
                 <hr>
 
                 <ul class="experience-list">
                     <li>
-                        <h3 contenteditable="true">深圳市法本信息技术股份有限公司（2017.6 - 至今）</h3>
+                        <h3 contenteditable="true">360金融（2019.4 - 至今）</h3>
+                        <ol
+                            style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">负责360借条，360地推销售端APP开发</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">负责Hybrid，JSBridge的通讯，资源包的打包和构建</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">使用Eggjs + redis + mysql + mongoDB，构建前端错误的收集和统计</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用Typescript，React，Mobx，NodeJS进行开发</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                    </li>
+
+                    <li>
+                        <h3 contenteditable="true">深圳市法本信息技术股份有限公司（2017.6 - 2019.4）</h3>
                         <ol
                             style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true">负责金融证券，交易系统的前端开发</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                <p style="outline: 0px; padding: 0px;" contenteditable="true">前端通过node + mocha，测试后台接口的可靠性，和数据的对比</p>
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">前端通过node +
+                                    mocha，测试后台接口的可靠性，和数据的对比</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true">通过文件的形式，进行自动化下单和校验</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                <p style="outline: 0px; padding: 0px;" contenteditable="true">使用Typescript，React，Mobx，Electron进行开发</p>
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用Typescript，React，Mobx，Electron进行开发</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
                             </li>
                         </ol>
                         <p contenteditable="true"></p>
+                        <span class="item-remove"><i class="iconfont icon-delete"></i></span>
                     </li>
 
                     <li>
@@ -212,19 +227,32 @@
                             style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true">负责公司的内部销售系统的前端构建</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                <p style="outline: 0px; padding: 0px;" contenteditable="true">微信活动和小游戏的开发，jssdk的使用，真机调试</p>
-                            </li>
-                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                <p style="outline: 0px; padding: 0px;" contenteditable="true">广州市长大厦，后台系统，pc和微信端的预定系统，进行开发
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">微信活动和小游戏的开发，jssdk的使用，真机调试
                                 </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                <p style="outline: 0px; padding: 0px;" contenteditable="true">使用es5，vue.js，jQuery，es6，css3进行开发</p>
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    广州市长大厦，后台系统，pc和微信端的预定系统，进行开发
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用es5，vue.js，jQuery，es6，css3进行开发</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                         </ol>
                         <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
                     </li>
 
                     <li>
@@ -235,316 +263,291 @@
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true"><span
                                         style="background-color: rgb(250, 250, 250); display: inline !important;">负责移动端、pc端、微信上的h5开发</span>
                                 </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true"><span
                                         style="display: inline !important;">熟练掌握DIV+CSS页面架构和布局方式</span></p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true"><span
                                         style="background-color: rgb(250, 250, 250); display: inline !important;">熟悉原生JavaScript语言</span>
                                 </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                             <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
                                 <p style="outline: 0px; padding: 0px;" contenteditable="true"><span
                                         style="display: inline !important;">熟悉HTML5、CSS3新技术</span></p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
                             </li>
                         </ol>
                         <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
                     </li>
                 </ul>
             </div>
             <div class="project info-unit right-list">
                 <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title"
-                        contenteditable="true">项目经验</span></h2>
+                        contenteditable="true">项目经验</span><span class="item-add" style="visibility: hidden;"><i
+                            class="iconfont icon-playlistadd"></i></span><span class="unit-remove"
+                        style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                            <h3 contenteditable="true">金融券商交易系统（1年半）</h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        交易系统，实时性要求比较高，需要通过websocket连接，通过心跳检查，主题订阅，消息的时序检查，确保交易系统的高效和正确性
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        开发前端的SDK，对交易数据进行处理和打包，再通过websoket的send方法，发送给后台，需要前后台建立统一的字典文件Dicts<br style="outline: 0px; padding: 0px;"></p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        Electron，使用web worker，提供高性能，压包，解包，数据去重，文件扫描，序列化转换，频率控制等，线程通讯，
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        使用了BroadcastChannel，postMessage，messageChannel，高级API，优化线程之间的通讯传输<br style="outline: 0px; padding: 0px;"></p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">借鉴react，Fiber的原理，requestidlecallback，requestAnimationFrame, 优化自研的Gird组件，把任务分片，分解渲染进程中引起的卡顿重任务</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">通过React的HOC和抽象配置化，优化重构和维护，原来项目较老的组件，使得在频繁的迭代中，变得高可用，和高扩展，如：指令，委托，成交，持仓，账号这四大组件</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        错误排查，使用Node的fs模块，在客户端上面落地日志和上传报错信息到服务器进行错误跟踪
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        通过Typescript类型检查，和Mobx，定义好交易的需要用的store，通过修改数据，响应式的进行界面内复杂的联通和数据的处理
-                                    </p>
-                                </li>
-                            </ol>
-                            <p contenteditable="true"></p>
-                        </li>
-                        <li>
-                            <h3 contenteditable="true">内部销售系统（6个月）</h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        css，使用meta，等于640的宽度布局，使苹果，安卓，微信三端的页面统一</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        使用swiper.js，vue.js，jquery进行开发<br style="outline: 0px; padding: 0px;"></p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">canvas图片压缩后，提交给后台</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">vuex
-                                        解决页面之间，共享变量<br style="outline: 0px; padding: 0px;"></p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">使用策略者模式，进行的统一验证</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">单例模式，进行页面提示框的统一调用</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">通过js，统一调用两端原生app的接口</p>
-                                </li>
-                                <li><a href="http://www.lgstatic.com/i/image/M00/2C/E7/CgpEMlknx32AJ9vaAAFIJdQH1wY383.png"
-                                        target="_blank">
-                                        <img class="wh43"
-                                            src="http:////www.lgstatic.com/i/image/M00/2C/E7/CgpEMlknx5eAZ9JjAAB1h91flL8342.png"
-                                            alt="" data-origin-src="i/image/M00/2C/E7/CgpEMlknx32AJ9vaAAFIJdQH1wY383.png"
-                                            data-cut-url="i/image/M00/2C/E7/CgpEMlknx5eAZ9JjAAB1h91flL8342.png" style="width: 110px;">
-                                    </a>
-                                    <a href="http://www.lgstatic.com/i/image/M00/29/39/CgpFT1kn13WANRbzAAHOjPnYIPM053.png"
-                                        target="_blank">
-                                        <img class="wh43"
-                                            src="http://www.lgstatic.com/i/image/M00/2C/F2/CgpEMlkn13eAUeFgAADUSEpqbo4757.png"
-                                            alt="" data-origin-src="i/image/M00/29/39/CgpFT1kn13WANRbzAAHOjPnYIPM053.png"
-                                            data-cut-url="i/image/M00/2C/F2/CgpEMlkn13eAUeFgAADUSEpqbo4757.png" style="width: 110px;">
-                                    </a>
-                                </li>
-                            </ol>
-                            <p contenteditable="true"></p>
-                        </li>
-                        <li>
-                            <h3 contenteditable="true">广州市长大厦微信上的预定网站（3个月）
-                                <a href="http://www.cmphotel.com/page/wx/reserve.html" style="cursor: pointer;">访问地址</a>
-                            </h3>
-                            <ol
-                                style="outline: 0px;padding: 0px 0px 0px 2em;list-style-position: initial;list-style-image: initial;color: rgb(85, 85, 85);font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica;font-size: 14px;background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
-                                        调用微信的jssdk，分享和关注</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
-                                        用rem布局，来适配屏幕和高清屏</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
-                                        使用了css3，flex布局，require.js，vue.js，jQuery开发页面的业务逻辑</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
-                                        通过require.js的模块化，实现业务的模块和后台的接口</p>
-                                </li>
-                            </ol>
-                            <p contenteditable="true"></p>
-                        </li>
-                        <li>
-                            <h3 contenteditable="true">php构建的商城（1个月）</h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true">
-                                        测试账号test，密码test</p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true"><span
-                                            style="font-size: 14px; background-color: rgb(250, 250, 250); display: inline !important;">搭建lamp环境，使用svn上传代码</span>
-                                    </p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true"><span
-                                            style="font-size: 14px; background-color: rgb(250, 250, 250); display: inline !important;">MySQL，建表查询，一对多查询，多多建中间表</span>
-                                    </p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true">
-                                        RABC，通过建立五张表，把用户加到对应的角色上去</p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true"><span
-                                            style="font-size: 14px; background-color: rgb(250, 250, 250); display: inline !important;">前端设置，缓存，生成静态页，加快访问速度</span>
-                                    </p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true"><span
-                                            style="font-size: 14px; background-color: rgb(250, 250, 250); display: inline !important;"><span
-                                                style="font-size: 14px; display: inline !important;">前后台的登录注册</span></span>
-                                    </p>
-                                </li>
-                                <li style="margin-bottom: 0px; outline: 0px; padding: 0px;">
-                                    <p style="line-height: 26px; outline: 0px; padding: 0px;" contenteditable="true"><span
-                                            style="font-size: 14px; background-color: rgb(250, 250, 250); display: inline !important;"><span
-                                                style="font-size: 14px; display: inline !important;"><span
-                                                    style="font-size: 14px; display: inline !important;">订单中的购物车，用文件锁的形式，解决并发下单</span></span></span>
-                                    </p>
-                                </li>
-                            </ol>
-                            <p contenteditable="true"></p>
-                        </li>
+                        <h3 contenteditable="true">360借条APP【Hybrid应用】</h3>
+                        <ol
+                            style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    技术栈，Typescript，React，Mobx，Webpack
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    webpack，开启了【import动态加载】【tree shaking】【split chunk】对代码进行拆分
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用Eslint 和 Commitlint，统一代码的样式和Git Message的提交规范
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用rem进行移动端的适配，通过PxToRem插件，提示开发的效率
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    Hybrid，增量包的构建和JSBridge的通讯
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    在开发环境，使用Koa + Mockjs，可以自定义请求是否走Mock的数据</p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
+                    </li>
 
-                        <li>
-                            <h3 contenteditable="true">留言板（1-week）</h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        后台使用node.js，mongodb数据库，ejs.js模板引擎</p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        前端使用bootstrap，jQuery，moment.js构建</p>
-                                </li>
-                            </ol>
-                            <p contenteditable="true"></p>
-                        </li>
+                    <li>
+                        <h3 contenteditable="true">360金融前端信息统计系统【前后台】</h3>
+                        <ol
+                            style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    前端技术栈: vue, Axios, Echarts 
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    后端技术栈：eggjs + redis(队列和缓存) + mysql,mongoDB（持久层）
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    开发H5SDK，给别的系统调用收集统计信息，包含3大模块，1.performance暴露出来统计信息 2.错误的监听 3.请求资源时间的统计
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    MySQL使用分区表，来优化大数据量的删除和查询
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
+                    </li>
 
-                        <li>
-                            <h3 contenteditable="true">
-                                安利新春（1-week）
-                                <a href="http://m.palm-h.com/2017/anli/anli2/index.php" style="cursor: pointer;">访问地址</a>
-                            </h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        基于hammer.js，自己封装了一个preViewImg.js <br>
-                                        实现图片的上传，手势的跳转，把调整后的图片已base64位输出
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        使用js，控制文字竖着输出
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        简单的动画，使用了animate.css动画库 <br>
-                                        复杂的动画，使用jquery.transit.js
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
-
-                        <li>
-                            <h3 contenteditable="true">
-                                Tudor帝舵表（1-week）
-                                <a href="http://m.palm-h.com/2016/tudor/index.html" style="cursor: pointer;">访问地址</a>
-                            </h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        用svg + css3的animation，使loading的那个转圈变成无锯齿
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        通过h5的DeviceOrientation，来获取设备的重力事件，使手表的指针跟着手机转动
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        指针的动画绕表面一圈动画，使用requestAnimationFrame + canvas来描绘的<br>
-                                        canvas的globalCompositeOperation属性使用destination-out这个值，默认的source-over会盖在上面
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        滑动展示和里面动画，都是靠swiper.js和animate.css共同完成的
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
-
-                        <li>
-                            <h3 contenteditable="true">
-                                可望官网（1个月）
-                                <a href="http://www.coreonesh.com" style="cursor: pointer;">访问地址</a>
-                            </h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        负责pc端，和移动端，2端的主要开发 <br>
-                                        页面自动识别跳转
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        在pc端，使用媒体查询media，适配了pc主要的屏幕的尺寸，1920px，1440px，1366px
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        pc首页，使用vue.js，进行排序，搜索，过滤，提升用户的体验
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        移动端，使用fastclick.js，解决页面点击延迟问题
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        移动端，使用mlpushmenu.js，左边弹出菜单，滑动条不会影响右边的布局
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
-
-                        <li>
-                            <h3 contenteditable="true">
-                                ugg雪地靴（1-week）
-                            </h3>
-                            <ol
-                                style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        简单的动画，使用了animate.css动画库 <br>
-                                        复杂的动画，使用jquery.transit.js
-                                    </p>
-                                </li>
-                                <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
-                                    <p style="outline: 0px; padding: 0px;" contenteditable="true">
-                                        使用了lufy.js游戏框架，来进行canvas的分层操作<br>
-                                        包括分层的选择，分层的染色，和最后的合成
-                                    </p>
-                                </li>
-                            </ol>
-                        </li>
+                    <li>
+                        <h3 contenteditable="true">金融券商交易系统【桌面端应用】</h3>
+                        <ol
+                            style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    交易系统，实时性要求比较高，需要通过websocket连接，通过心跳检查，主题订阅，消息的时序检查，确保交易系统的高效和正确性
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    开发前端的SDK，对交易数据进行处理和打包，再通过websoket的send方法，发送给后台，需要前后台建立统一的字典文件Dicts<br
+                                        style="outline: 0px; padding: 0px;"></p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    Electron，使用web worker，提供高性能，压包，解包，数据去重，文件扫描，序列化转换，频率控制等，线程通讯，
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用了BroadcastChannel，postMessage，messageChannel，高级API，优化线程之间的通讯传输<br
+                                        style="outline: 0px; padding: 0px;"></p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    借鉴react，Fiber的原理，requestidlecallback，requestAnimationFrame,
+                                    优化自研的Gird组件，把任务分片，分解渲染进程中引起的卡顿重任务</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    通过React的HOC和抽象配置化，优化重构和维护，原来项目较老的组件，使得在频繁的迭代中，变得高可用，和高扩展，如：指令，委托，成交，持仓，账号这四大组件</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    错误排查，使用Node的fs模块，在客户端上面落地日志和上传报错信息到服务器进行错误跟踪
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    通过Typescript类型检查，和Mobx，定义好交易的需要用的store，通过修改数据，响应式的进行界面内复杂的联通和数据的处理
+                                </p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
+                    </li>
+                    <li>
+                        <h3 contenteditable="true">内部销售系统【Hybrid应用】</h3>
+                        <ol
+                            style="outline: 0px; padding: 0px 0px 0px 2em; list-style-position: initial; list-style-image: initial; color: rgb(85, 85, 85); font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica; font-size: 14px; background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    css，使用meta，等于640的宽度布局，使苹果，安卓，微信三端的页面统一</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">
+                                    使用swiper.js，vue.js，jquery进行开发<br style="outline: 0px; padding: 0px;"></p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">canvas图片压缩后，提交给后台</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">vuex
+                                    解决页面之间，共享变量<br style="outline: 0px; padding: 0px;"></p>
+                                <span class="item-remove"><i class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">使用策略者模式，进行的统一验证</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">单例模式，进行页面提示框的统一调用</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px;" contenteditable="true">通过js，统一调用两端原生app的接口</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li><a href="http://www.lgstatic.com/i/image/M00/2C/E7/CgpEMlknx32AJ9vaAAFIJdQH1wY383.png"
+                                    target="_blank">
+                                    <img class="wh43"
+                                        src="http:////www.lgstatic.com/i/image/M00/2C/E7/CgpEMlknx5eAZ9JjAAB1h91flL8342.png"
+                                        alt="" data-origin-src="i/image/M00/2C/E7/CgpEMlknx32AJ9vaAAFIJdQH1wY383.png"
+                                        data-cut-url="i/image/M00/2C/E7/CgpEMlknx5eAZ9JjAAB1h91flL8342.png"
+                                        style="width: 110px;">
+                                </a>
+                                <a href="http://www.lgstatic.com/i/image/M00/29/39/CgpFT1kn13WANRbzAAHOjPnYIPM053.png"
+                                    target="_blank">
+                                    <img class="wh43"
+                                        src="http://www.lgstatic.com/i/image/M00/2C/F2/CgpEMlkn13eAUeFgAADUSEpqbo4757.png"
+                                        alt="" data-origin-src="i/image/M00/29/39/CgpFT1kn13WANRbzAAHOjPnYIPM053.png"
+                                        data-cut-url="i/image/M00/2C/F2/CgpEMlkn13eAUeFgAADUSEpqbo4757.png"
+                                        style="width: 110px;">
+                                </a>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span></li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
+                    </li>
+                    <li>
+                        <h3 contenteditable="true">广州市长大厦微信上的预定网站【H5移动端项目】</h3>
+                        <ol
+                            style="outline: 0px;padding: 0px 0px 0px 2em;list-style-position: initial;list-style-image: initial;color: rgb(85, 85, 85);font-family: &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, SimSun, Arial, &quot;Helvetica Neue&quot;, Helvetica;font-size: 14px;background-color: rgb(250, 250, 250);">
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
+                                    调用微信的jssdk，分享和关注</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
+                                    用rem布局，来适配屏幕和高清屏</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
+                                    使用了css3，flex布局，require.js，vue.js，jQuery开发页面的业务逻辑</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                            <li style="outline: 0px; margin-bottom: 0px; padding: 0px;">
+                                <p style="outline: 0px; padding: 0px; line-height: 26px;" contenteditable="true">
+                                    通过require.js的模块化，实现业务的模块和后台的接口</p>
+                                <span class="item-remove" style="visibility: hidden;"><i
+                                        class="iconfont icon-delete"></i></span>
+                            </li>
+                        </ol>
+                        <p contenteditable="true"></p>
+                        <span class="item-remove" style="visibility: hidden;"><i
+                                class="iconfont icon-delete"></i></span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -559,6 +562,14 @@
     <div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
     <div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
     <div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+
+    </div>
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+
+    </div>
+
+
     <div class="remodal-wrapper remodal-is-closed" style="display: none;">
         <div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal"
             tabindex="-1">
